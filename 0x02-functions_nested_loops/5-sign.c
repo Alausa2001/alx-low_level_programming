@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_sign - print sign of numbers
- * n: number whos sign is to
+ * @n: number whos sign is to
  * be printed
  * Return: 0 1 0r -1
  */
@@ -12,7 +12,7 @@ int print_sign(int n)
 		_putchar('+');
 		return (1);
 	}
-	else if (n == '0')
+	else if (n == 0)
 	{
 		_putchar('0');
 		return (0);
