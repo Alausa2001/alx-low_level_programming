@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * print_sign - print sign of numbers
  * n: number whos sign is to
