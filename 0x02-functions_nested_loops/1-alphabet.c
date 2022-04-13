@@ -3,6 +3,7 @@
  * main - print alphabet in lower case
  *
  * Return: void
+ * print_alphabet: lower cases only ' found in main.h
  */
 void print_alphabet(void)
 {
