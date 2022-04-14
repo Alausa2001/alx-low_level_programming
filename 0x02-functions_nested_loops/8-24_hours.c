@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - print every minutr of a day
- * @a: day
+ *
  * Description: funt that print hour and minutes
  * Return: void
  */
