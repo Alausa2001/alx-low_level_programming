@@ -3,7 +3,7 @@
  * add - sum
  * @a: integer a
  * @b: integer b
- * Description: funtion that adds two 
+ * Description: funtion that adds two
  * integers and return the result
  * Return: Result
  */
