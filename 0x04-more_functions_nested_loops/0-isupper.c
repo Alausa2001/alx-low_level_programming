@@ -12,12 +12,8 @@ int _isupper(int c)
 	for (u = 'A'; u <= 'Z'; u++)
 	{
 		if (c == u)
-		{
 			return (1);
-		}
 		else
-		{
 			return (0);
-		}
 	}
 }
