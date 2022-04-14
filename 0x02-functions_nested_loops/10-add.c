@@ -3,10 +3,10 @@
  * add - sum
  * Return: Result
  */
-int add(int, int)
+int add(int a, int b)
 {
-	int n ,b, c;
+	int n;
 
-	n = b + c;
+	n = a + b;
 	return (n);
 }
