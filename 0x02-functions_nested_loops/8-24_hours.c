@@ -2,6 +2,7 @@
 /**
  * jack_bauer - print every minutr of a day
  * @a: day
+ * Description: funt that print hour and minutes
  * Return: void
  */
 void jack_bauer(void)
@@ -19,7 +20,6 @@ void jack_bauer(void)
 			_putchar((b % 10) + '0');
 			_putchar('\n');
 		}
-	
 	}
 }
 
