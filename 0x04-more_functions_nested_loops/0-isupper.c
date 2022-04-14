@@ -7,14 +7,7 @@
  */
 int _isupper(int c)
 {
-	char u;
-	int p;
-
-	for (u = 'A'; u <= 'Z'; u++)
-	{
-		if (u == c)
-			p = 1;
-	}
-
-	return (p);
+	if (c >= '65' && c < '91')
+		return (1);
+	return (0
 }
