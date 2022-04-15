@@ -8,6 +8,9 @@
  */
 int mul(int a, int b)
 {
+	int c;
+	int d;
+	int result;
 	a = c;
 	b = d;
 
