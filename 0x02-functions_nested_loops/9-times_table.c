@@ -5,19 +5,29 @@
  */
 void times_table(void)
 {
-	int p, q, result;
+	int p, q;
 
-	p = '0';
-	q = '0';
-
-	result = (p * q);
-	for (; p <= '9'; p++)
+	for (p = '0'; p <= '9'; p++)
 	{
-		for (; q <= '9'; q++)
+		for (q = '0'; q <= '9'; q++)
 		{
+			int result = p * q;
+			if (result <= '9')
+			{
 			_putchar(result);
 			_putchar(',');
 			_putchar(' ');
+			}
+			else
+			{
+				_putchar(result / 10);
+				_putchar(result % 10);
+				_putchar(',');
+				_putchar(' ');
+			}
+
 		}
+		_putchar('\n');
+
 	}
 }
