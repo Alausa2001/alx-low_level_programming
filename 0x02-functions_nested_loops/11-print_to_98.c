@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_to_98 - check main
@@ -7,16 +6,20 @@
  * natural numbers from n to 98
  * RETURN: VOID
  */
-int main(void)
+void print_to_98(int n)
 {
-	int n;
+	int  n, i;
 
-	for (n = '0'; n < '99'; n++)
+	if (i == 99)
 	{
-		printf(n);
+		for (; n < i; n++)
 		{
-			printf(',');
-			printf(' ');
+			if ((n <= 0) || (n > 0))
+			{
+				_putchar(n);
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 }
