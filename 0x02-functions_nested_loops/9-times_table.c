@@ -7,12 +7,16 @@ void times_table(void)
 {
 	int p, q;
 	int result;
+	tens, ones;
 
 	for (p = 0; p <= 9; p++)
 	{
 		for (p = 0; q <= 9; q++)
 		{
 			result = p * q;
+			tens = result / 10;
+			ones = result % 10;
+
 			if (p == 0)
 			{
 				_putchar('0');
@@ -23,14 +27,14 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar((result / 10) + '0');
+				_putchar(ones + '0');
 			}
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar((result / 10) + '0');
-				_putchar((result % 10) + '0');
+				_putchar(tens + '0');
+				_putchar(ones + '0');
 			}
 
 		}
