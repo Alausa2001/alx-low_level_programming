@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_to_98 - check main
@@ -8,18 +9,21 @@
  */
 void print_to_98(int n)
 {
-	int i;
-
-	if (i == 99)
+	if (n < 98)
 	{
-		for (; n < i; n++)
+		while (n <= 98)
 		{
-			if ((n <= 0) || (n > 0))
-			{
-				_putchar(n);
-				_putchar(',');
-				_putchar(' ');
-			}
+			printf("%d", n);
+			n++;
 		}
 	}
+	if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			n--;
+		}
+	}
+	printf('\n');
 }
