@@ -8,8 +8,8 @@ void times_table(void)
 	int p, q;
 	int result;
 
-	p = '0';
-	q = '0';
+	p = 0;
+	q = 0;
 
 	result = p * q;
 
@@ -19,7 +19,7 @@ void times_table(void)
 		{
 			if ((p == 0) || (q == 0))
 			{
-				_putchar(0);
+				_putchar('0');
 			}
 
 			else if (result <= 9)
