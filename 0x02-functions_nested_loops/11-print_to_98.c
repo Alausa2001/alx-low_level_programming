@@ -7,8 +7,10 @@
  * natural numbers from n to 98
  * RETURN: VOID
  */
-void print_to_98(int n)
+int main(void)
 {
+	int n;
+
 	for (n = '0'; n < '99'; n++)
 	{
 		printf(n);
