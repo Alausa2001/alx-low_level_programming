@@ -8,15 +8,11 @@ void times_table(void)
 	int p, q;
 	int result;
 
-	p = 0;
-	q = 0;
-
-	result = p * q;
-
-	for (; p <= 9; p++)
+	for (p = 0; p <= 9; p++)
 	{
-		for (; q <= 9; q++)
+		for (p = 0; q <= 9; q++)
 		{
+			result = p * q;
 			if (p == 0)
 			{
 				_putchar('0');
