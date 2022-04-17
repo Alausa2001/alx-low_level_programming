@@ -8,8 +8,8 @@ void times_table(void)
 	int p, q;
 	int result;
 
-	p = 0;
-	q = 0;
+	p = '0';
+	q = '0';
 
 	result = p * q;
 
