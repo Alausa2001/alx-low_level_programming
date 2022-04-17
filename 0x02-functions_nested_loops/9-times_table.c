@@ -5,14 +5,14 @@
  */
 void times_table(void)
 {
-	int p, q;
+	int p, q = 0;
 	int result;
 
 	result = p * q;
 
-	for (p = 0; p <= 9; p++)
+	for (; p <= 9; p++)
 	{
-		for (q = 0; q <= 9; q++)
+		for (; q <= 9; q++)
 		{
 			if ((p == 0) || (q == 0))
 			{
