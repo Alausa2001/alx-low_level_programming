@@ -12,7 +12,7 @@ void print_times_table(int n)
 	{
 		for (row = 0; row <= 14; row++)
 		{
-			for (column = 0; column <= 14; column++)
+			for (column = 0; column <= n; column++)
 			{
 				product = row * column;
 				tens = product / 10;
