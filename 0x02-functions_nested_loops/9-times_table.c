@@ -8,7 +8,7 @@ void times_table(void)
 	int p, q;
 	int result;
 
-	result = (p * q);
+	result = p * q;
 
 	for (p = 0; p <= 9; p++)
 	{
@@ -16,7 +16,7 @@ void times_table(void)
 		{
 			if ((p == 0) || (q == 0))
 			{
-				putchar(0);
+				_putchar(0);
 			}
 
 			else if (result <= 9)
