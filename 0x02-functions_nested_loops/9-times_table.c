@@ -12,6 +12,7 @@ void times_table(void)
 		for (q = '0'; q <= '9'; q++)
 		{
 			int result = p * q;
+
 			if (result <= '9')
 			{
 			_putchar(result);
@@ -20,8 +21,8 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(result / 10);
-				_putchar(result % 10);
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
