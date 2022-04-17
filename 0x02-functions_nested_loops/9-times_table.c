@@ -10,7 +10,7 @@ void times_table(void)
 	p = '0';
 	q = '0';
 
-	result = p * q;
+	result = (p * q);
 	for (; p <= '9'; p++)
 	{
 		for (; q <= '9'; q++)
