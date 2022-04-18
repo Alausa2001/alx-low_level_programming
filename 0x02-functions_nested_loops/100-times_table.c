@@ -17,8 +17,8 @@ void print_times_table(int n)
 				product = row * column;
 				tens = product / 10;
 				ones = product % 10;
-				hundred = product / 100;
-				hundreds = product % 100;
+				hundred = product / 10;
+				hundreds = product % 10;
 
 				if (column == 0)
 				{
