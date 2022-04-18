@@ -40,15 +40,13 @@ void print_times_table(int n)
 					_putchar(tens + '0');
 					_putchar(ones + '0');
 				}
-				else
+				else if (product > 100)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(hundred + '0');
 					_putchar(hundreds + '0');
 				}
-
-
 			}
 			_putchar('\n');
 		}
