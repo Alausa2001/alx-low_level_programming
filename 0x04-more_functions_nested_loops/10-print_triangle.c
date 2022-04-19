@@ -2,14 +2,31 @@
 /**
  * print_triangle - triianles
  *
- * @size: brb
+ * @size: size of triangle
  * Return: void
  */
 void print_triangle(int size)
 {
-	for (size = 0; size > 0; size++)
+	int a, b;
+
+	if (size > 0)
 	{
-		_putchar('#');
+		for (a = 0; a < size; a++)
+		{
+			for (b = 0; b < size; b++)
+			{
+				if (b < size - a)
+				{
+					_putchar(' ');
+				}
+				else
+					_putchar(35);
+			}
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
