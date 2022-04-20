@@ -1,0 +1,1 @@
+pointres strings and arrays
