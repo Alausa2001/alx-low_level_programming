@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * _puts - write a function that print a string
+ * @str: string whose content
+ * is to be printed
  * return: void
  */
 void _puts(char *str)
