@@ -11,6 +11,7 @@ int _strlen(char *s)
 	for (l = 0; *(s + l) != '\0'; l++)
 	{
 		_putchar(s[l]);
+		s++;
 		l++;
 	}
 	return (l);
