@@ -5,14 +5,11 @@
  */
 void _puts(char *str)
 {
-	char i = 0;
+	int p;
 
-	while (*str != '\0')
+	for (p = 0; *(str + p) != 0; p++)
 	{
-		if (*str != '\0')
-		_puts(str);
-		str++;
-		i++;
+		_putchar(*(str + p));
 	}
+	_putchar('\n');
 }
-
