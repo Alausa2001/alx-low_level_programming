@@ -7,8 +7,8 @@ void _puts(char *str)
 {
 	while (*str != '\0')
 	{
-		if (str[] != '\0')
-		_puts(str[]);
+		if (str != '\0')
+		_puts(str);
 		str++;
 	}
 }
