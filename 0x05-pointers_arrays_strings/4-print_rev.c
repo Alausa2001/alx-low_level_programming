@@ -11,13 +11,13 @@ void print_rev(char *s)
 	lett = 0;
 	while (s[lett] != '\0')
 	{
-		lett++
+		lett++;
 	}
 	lett--;
 	while (lett >= 0)
 	{
 		_putchar(s[lett]);
-		lett--
+		lett--;
 	}
 	_putchar('\n');
 }
