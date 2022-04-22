@@ -16,6 +16,9 @@ void rev_string(char *s)
 	}
 	a--;
 	b = 0;
+
+	int l;
+
 	while (b < a)
 	{
 		l = s[a];
