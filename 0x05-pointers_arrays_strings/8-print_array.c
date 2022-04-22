@@ -14,6 +14,8 @@ void print_array(int *a, int n)
 	{
 		if (lett == (n - 1))
 			printf("%d\n", a[lett]);
+		else if (lett == 0)
+			printf("%d\n", a[lett]);
 		else
 			printf("%d, ", a[lett]);
 	}
