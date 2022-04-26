@@ -10,5 +10,7 @@ void print_number(int n)
 
 	i = 0;
 	for (; i <= n || i >= n; i++)
+	{
 		_putchar(i);
+	}
 }
