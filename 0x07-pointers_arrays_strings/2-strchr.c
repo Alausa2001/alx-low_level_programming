@@ -18,7 +18,10 @@ char *_strchr(char *s, char c)
 		}
 		return (s[i]);
 
-		else if (s[i] != 'c' && s[i + 1] == '\0')
-			return (NULL);
+		else
+		{
+			continue;
+		}
+		return (NULL);
 	}
 }
