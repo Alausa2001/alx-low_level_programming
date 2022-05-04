@@ -8,6 +8,9 @@
  */
 int main(int agrc, char **agrv)
 {
+	/* enaabling cmpiler to compile despite
+	 * unused variable */
+	(void)agrv;
 	printf("%d\n", agrc);
 
 	return (0);
