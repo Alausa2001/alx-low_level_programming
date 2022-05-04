@@ -8,10 +8,12 @@
  */
 int main(int agrc, char **agrv)
 {
-	/* enaabling cmpiler to compile despite
-	 * unused variable */
+	/**
+	 * enaabling cmpiler to compile despite
+	 * unused variable
+	 */
 	(void)agrv;
-	printf("%d\n", agrc);
+	printf("%d\n", agrc - 1);
 
 	return (0);
 }
