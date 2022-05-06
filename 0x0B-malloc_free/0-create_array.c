@@ -3,16 +3,26 @@
 /**
  * create_array - this function creates an array
  * @size: size of array to create
- * @c: array name
+ * @c: char name
  * Return: base address if successful, else null
  */
 char *create_array(unsigned int size, char c)
 {
-	if (size != 0)
+	unsigned int i;
+	char *array;
+
+	if (size == 0)
+		return (NULL);
+	array = malloc(size * sizeof(char));
+
+	i = 0;
+	while (i < size)
 	{
-		char *c = (char)malloc(size * sizeof(char));
-	return (c);
+		array[i] = c;
+		i++;
 	}
-	else if (size == 0)
+	return (array);
+
+	if (array == '\0')
 		return (NULL);
 }
