@@ -10,9 +10,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int d, s;
+	int d, s, t;
+
+	t = d + s;
 	
-	s1 =(char *)malloc(d * sizeof(char));
+	s1 =(char *)malloc(t * sizeof(char));
 	if (s1 == NULL)
 	{
 		return (NULL);
