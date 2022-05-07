@@ -12,11 +12,10 @@ int main(int agrc, char **agrv)
 	int sum = 0;
 	int i;
 	int j = 0;
-	int k = 0;
 
 	if (agrc > 1)
 	{
-		for (i = 0; i < agrc; i++)
+		for (i = 1; i < agrc; i++)
 		{
 			for (; agrv[i][j] != '\0'; j++)
 			{
