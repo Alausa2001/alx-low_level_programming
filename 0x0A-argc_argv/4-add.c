@@ -12,15 +12,24 @@ int main(int agrc, char **agrv)
 	int sum = 0;
 	int i;
 	int j = 0;
+	int k = 0;
 
 	if (agrc > 1)
 	{
 		for (i = 0; i < agrc; i++)
 		{
+			for (; agrv[i][j] != '\0'; j++)
+			{
+				if (!isdigit(agrv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 			sum = sum + atoi(agrv[i]);
 		}
-		printf("%d\n", sum);
 	}
+	printf("%d\n", sum);
 	if (agrc == 1)
-		printf("%d\n", j);
+		printf("%d\n", k);
 }
