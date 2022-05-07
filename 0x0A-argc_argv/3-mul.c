@@ -6,16 +6,15 @@
  * @agrv: array of coomand line arguments
  * Return: 1 if it does not receive two arguments
  */
-int main(int agrc, char **agrv)
+int main(int argc, char **argv)
 {
-	int i = 0;
-	int mul = 1;
+	int i, mul = 1;
 
-	if (agrc > 1 && agrc < 4)
+	if (argc > 1 && argc < 4)
 	{
-		for (i = 1; i < agrc; i++)
+		for (i = 1; i < argc; i++)
 		{
-			mul = mul * atoi(agrv[i]);
+			mul = mul * atoi(argv[i]);
 		}
 		printf("%d\n", mul);
 	}
