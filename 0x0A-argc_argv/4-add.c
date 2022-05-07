@@ -30,6 +30,5 @@ int main(int agrc, char **agrv)
 		}
 	}
 	printf("%d\n", sum);
-	if (agrc == 1)
-		printf("%d\n", k);
+	return (0);
 }
