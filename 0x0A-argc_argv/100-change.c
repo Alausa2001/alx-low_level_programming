@@ -24,6 +24,5 @@ int main(int argc, char **argv)
 	{
 		printf("0\n");
 	}
-	if (argc == 2)
 }
 
