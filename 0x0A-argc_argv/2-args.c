@@ -1,15 +1,17 @@
-#include <main.h>
+#include <stdio.h>
 /**
  * main - program prints all arguments it receives
- * Retun: 0
+ * @agrc: no of aruments
+ * @agrv: array of command line arguments
+ * Return: 0
  */
-int main(void)
+int main(int agrc, char **agrv)
 {
 	int i = 0;
 
-	for(; i < agrc; i++)
+	for (; i < agrc; i++)
 	{
-		printf("%s\n", argv[i]);
+		printf("%s\n", agrv[i]);
 	}
 	return (0);
 }
