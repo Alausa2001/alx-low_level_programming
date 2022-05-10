@@ -5,11 +5,11 @@
  * the malloc_checked function should cause normal
  * process termination with a status value of 98
  * @b: the size of memory to be allocated
- * Return: void
+ * Return: malloc return pointer
  */
 void *malloc_checked(unsigned int b);
 {
-	unsigned int *memory;
+	void *memory;
 
 	memory = malloc(b);
 
