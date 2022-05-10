@@ -7,9 +7,9 @@
  * @b: the size of memory to be allocated
  * Return: malloc return pointer
  */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
-	void *memory;
+	char *memory;
 
 	memory = malloc(b);
 
