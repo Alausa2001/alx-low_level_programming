@@ -5,19 +5,15 @@
  * @ptr: pointer to previouly allocated memory
  * @old_size: size of previous memory(bytes)
  * @new_size: size of new memory in bytes
- * Return: if reallocation is successful
- * return pointer to new memory else return null
+ * Return: if reallocation is successful(NEW POINTER) ELSE NULL
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *ptrn;
-	int i;
+	unsigned int i;
 
 	if (new_size == old_size)
-	{
-		free(ptr);
-		return (NULL);
-	}
+		return (ptr);
 	if (ptr == NULL)
 	{
 		ptrn = malloc(new_size);
@@ -30,9 +26,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
-	for (i = 0; i < old_size || i < new_size; i++)
+	if (new_size > old_size)
 	{
-		ptrn[i] = ptr[i]
+		ptrn = malloc(new_size);
+		if (ptrn == NULL)
+			return (NULL);
+		for (i = 0; (i < old_size && i < new_size); i++)
+			ptrn[i] = ptr[i];
+		free(ptr);
 	}
-	free(ptr);
 	return (ptrn);
+}
