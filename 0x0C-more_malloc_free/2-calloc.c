@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * _calloc - allocates contiguous memory
- * nmemb: no of blocks to allocate
- * size: size of each block
+ * @nmemb: no of blocks to allocate
+ * @size: size of each block
  * Return: calloc returns a void to the base address
  * or null if calloc fails or nmemb or size == 0
  */
