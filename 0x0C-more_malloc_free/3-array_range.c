@@ -9,17 +9,17 @@
 int *array_range(int min, int max)
 {
 	char *p;
-	unsigned int i = 0;
+	unsigned int i;
 
 	if (min > max)
 		return (NULL);
 	p = malloc((max - min + 1) * sizeof(int));
 	if (p == NULL)
 		return (NULL);
-
+	i = 0;
 	while (i < (max - min))
 	{
-		p[i] = min + 1;
+		p[i] = min + i;
 		i++;
 	}
 	p[i] = max;
