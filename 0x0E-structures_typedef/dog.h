@@ -1,5 +1,14 @@
-#define _DOG_H
-#ifndef _DOG_H
+#define _DOG_H_
+#ifndef _DOG_H_
+/**
+ * strucy dog - struct store some info about dogs
+ * @name: name of dog
+ * @age: dog's age
+ * @owner: dog owner
+ *
+ * Description: struct dog saves certain info
+ * about the name age and owner of dogs
+ */
 
 struct dog
 {
