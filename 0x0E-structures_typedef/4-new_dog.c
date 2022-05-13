@@ -19,13 +19,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newdog);
 		return (NULL);
 	}
-	for (nowner = 0; owner[nowner] != '\0'; nowner++)
-		;
-	for (nname = 0; name[nname] != '\0'; nname++)
-		;
-	for (i = 0; i < nname; i++)
-		name[i] = name[nname];
-	for (i = 0; i < nowner; i++)
-		owner[i] = owner[nowner];
-	return (newdog);
+	else
+	{
+		for (nowner = 0; owner[nowner] != '\0'; nowner++)
+			;
+		for (nname = 0; name[nname] != '\0'; nname++)
+			;
+		for (i = 0; i < nname; i++)
+			name[i] = name[nname];
+		for (i = 0; i < nowner; i++)
+			owner[i] = owner[nowner];
+		return (newdog);
 }
