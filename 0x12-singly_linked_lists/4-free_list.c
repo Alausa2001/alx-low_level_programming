@@ -14,6 +14,6 @@ void free_list(list_t *head)
 		access = head->next;
 		free(head->str);
 		free(head);
-		head = temp;
+		head = access;
 	}
 }
