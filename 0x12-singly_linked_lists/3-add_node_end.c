@@ -1,5 +1,4 @@
 #include <string.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 /**
@@ -16,7 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (newnode == NULL)
 		return (NULL);
 	newnode->str = strdup(str);
-	newnode->len = _strlen(str);
+	newnode->len = strlen(str);
 	newnode->next = NULL;
 
 	if (*head == NULL)
@@ -33,12 +32,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	return (newnode);
 }
+
+
 /**
- * _strlen - finds the length of a string.
+ * strlen - finds the length of a string.
  * Return: length of string
  * @ptr: poniter to string
  */
-int _strlen(const char *ptr)
+int strlen(const char *ptr)
 {
 	int count = 0;
 
