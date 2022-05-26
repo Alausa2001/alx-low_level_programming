@@ -33,3 +33,4 @@ list_t *add_node_end(list_t **head, const char *str)
 		traverse->next = newnode;
 	}
 	return (*head);
+}
