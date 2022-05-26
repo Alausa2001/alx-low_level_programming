@@ -10,12 +10,15 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newnode, *traverse;
+	size_t count = 0;
 
 	newnode = malloc(sizeof(list_t));
 	if (newnode == NULL)
 		return (NULL);
 	newnode->str = strdup(str);
-	newnode->len = strlen(str);
+	for (; str[count]; count++)
+		;
+	newnode->len = count;
 	newnode->next = NULL;
 	traverse = *head;
 
@@ -30,21 +33,3 @@ list_t *add_node_end(list_t **head, const char *str)
 		traverse->next = newnode;
 	}
 	return (*head);
-}
-
-
-/**
- * strlen - finds the length of a string.
- * Return: length of string
- * @ptr: poniter to string
- */
-int strlen(const char *ptr)
-{
-	int count = 0;
-
-	while (*(ptr + count) != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
