@@ -9,8 +9,8 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newnode, *traverse;
-	unsigned int count;
+	list_t *newnode, *trav;
+	size_t count;
 
 	newnode = malloc(sizeof(list_t));
 	if (newnode == NULL)
@@ -20,15 +20,17 @@ list_t *add_node_end(list_t **head, const char *str)
 		;
 	newnode->len = count;
 	newnode->next = NULL;
-	traverse = *head;
+	trav = *head;
 
-	if (traverse == NULL)
+	if (trav == NULL)
+	{
 		*head = newnode;
+	}
 	else
 	{
-		while (traverse->next != NULL)
-			traverse = traverse->next;
-		traverse->next = newnode;
+		while (trav->next != NULL)
+			trav = trav->next;
+		trav->next = newnode;
 	}
 	return (*head);
 }
