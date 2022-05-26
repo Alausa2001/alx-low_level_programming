@@ -10,13 +10,13 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newnode, *traverse;
-	size_t count = 0;
+	unsigned int count;
 
 	newnode = malloc(sizeof(list_t));
 	if (newnode == NULL)
 		return (NULL);
 	newnode->str = strdup(str);
-	for (; str[count]; count++)
+	for (count = 0; str[count]; count++)
 		;
 	newnode->len = count;
 	newnode->next = NULL;
@@ -27,9 +27,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		while (traverse->next != NULL)
-		{
 			traverse = traverse->next;
-		}
 		traverse->next = newnode;
 	}
 	return (*head);
