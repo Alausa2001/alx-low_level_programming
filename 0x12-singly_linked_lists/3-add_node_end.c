@@ -24,6 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		list_t *traverse = *head;
+
 		while (traverse->next != NULL)
 		{
 			traverse = traverse->next;
@@ -33,19 +34,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	return (newnode);
 }
 /**
- * _strlen - function that prints string length
- * @s: string
- * Return: string length
+ * _strlen - finds the length of a string.
+ * Return: length of string
+ * @ptr: poniter to string
  */
-int _strlen(char *s)
+int _strlen(const char *ptr)
 {
-	int l;
+	int count = 0;
 
-	l = 0;
-	while (*s != '\0')
+	while (*(ptr + count) != '\0')
 	{
-		l++;
-		s++;
+		count++;
 	}
-	return (l);
+	return (count);
 }
