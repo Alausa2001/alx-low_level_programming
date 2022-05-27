@@ -3,15 +3,13 @@
  * print_listint - Write a function that prints all the
  * Write a function that prints all the elements of a listint_t list
  * @h: pointer to the starting node
- * @trav: pointer used to traverse the list
  * Return: the no of nodes
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *trav;
+	const listint_t *trav = h
 	int count;
 
-	trav = h;
 	while (trav != NULL)
 	{
 		printf("%d\n", trav->n);
