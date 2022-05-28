@@ -11,12 +11,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *trav = head;
 
 	if (index == 0)
-		return (trav->n);
+		return (trav);
 	index--;
 	while (index != 0)
 	{
 		trav = trav->next;
 		index--;
 	}
-	return (trav->n);
+	return (trav);
 }
