@@ -12,7 +12,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	if (index == 0)
 		return (trav);
-	index--;
 	while (index != 0)
 	{
 		trav = trav->next;
