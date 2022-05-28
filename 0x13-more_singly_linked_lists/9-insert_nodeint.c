@@ -30,7 +30,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	trav->next = newnode;
 	if (idx == 0)
 	{
-		newnode->next = trav->link;
+		newnode->next = trav->next;
 		*head = newnode;
 	}
 	return (newnode);
