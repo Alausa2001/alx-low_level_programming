@@ -10,7 +10,7 @@ int pop_listint(listint_t **head)
 	listint_t *del = *head;
 
 	del = malloc(sizeof(listint_t));
-	if (del == NULL)
+	if (*del == NULL)
 	{
 		free(del);
 		return (NULL);
