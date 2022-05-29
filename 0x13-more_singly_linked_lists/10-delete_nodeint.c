@@ -29,6 +29,4 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	free(del);
 	del = NULL;
 	return (1);
-	if (index != 0 && traV == NULL)
-		return (1);
 }
