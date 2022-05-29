@@ -6,7 +6,11 @@
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *bhead, *ahead = NULL;
+	listint_t *bhead;
+	listint_t *ahead;
+
+	bhead = NULL;
+	ahead = NULL;
 
 	while (*head != NULL)
 	{
