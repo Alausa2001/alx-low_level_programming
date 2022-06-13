@@ -3,12 +3,12 @@
  * main - entry point
  * Return: zero
  */
-int main (void)
+int main(void)
 {
-	int i;
+	int i = 0;
 	long int a = 0, b = 1, next;
 
-	while (i <= 50)
+	while (i < 50)
 	{
 		next = a + b;
 		a = b;
@@ -22,4 +22,4 @@ int main (void)
 	}
 	putchar('\n');
 	return (0);
-}	
+}
