@@ -22,6 +22,7 @@ void puts_half(char *str)
 			_putchar(str[half]);
 			half++;
 		}
+		_putchar('\n');
 	}
 	else if (len % 2 != 0)
 	{
@@ -31,5 +32,6 @@ void puts_half(char *str)
 			_putchar(str[n]);
 			n++;
 		}
+		_putchar('\n');
 	}
 }
