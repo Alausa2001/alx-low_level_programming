@@ -7,7 +7,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *access = h;
+	const dlistint_t *access = h;
 	int count = 0;
 
 	while (access != NULL)
