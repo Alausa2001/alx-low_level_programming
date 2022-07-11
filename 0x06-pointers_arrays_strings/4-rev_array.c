@@ -22,5 +22,4 @@ void reverse_array(int *a, int n)
 		count--;
 		count2++;
 	}
-	return (a[count2]);
 }
