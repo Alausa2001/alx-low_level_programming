@@ -1,2 +1,2 @@
-all: m.h school.c main.c
-	$(CC) $? -o $@
+all:
+	gcc main.c school.c -o school
