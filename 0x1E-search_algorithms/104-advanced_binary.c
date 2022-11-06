@@ -43,7 +43,8 @@ size_t binary_recursion(int *array, size_t mid,
 	return (mid);
 }
 /**
- * binary_search - searches for a value in a sorted array using binary
+ * advanced_binary - searches for a value in a sorted array using recursive
+ * binary search
  * search technique
  * @size: size of the array
  * @array: pointer to the first element of the array
