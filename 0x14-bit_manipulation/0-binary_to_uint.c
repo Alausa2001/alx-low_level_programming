@@ -12,14 +12,14 @@ unsigned int binary_to_uint(const char *b)
 	int len = 0, dec = 0, count = 0;
 
 	if (b == NULL)
-		return 0;
+		return (0);
 	for (; b[len] != '\0'; len++)
 	{
 		if (b[len] != 49 && b[len] != 48)
-			return 0;
+			return (0);
 	}
 	len--;
-	while(b[count] != '\0')
+	while (b[count] != '\0')
 	{
 		if (b[count] == 49)
 		{
@@ -33,5 +33,5 @@ unsigned int binary_to_uint(const char *b)
 		}
 		count++;
 	}
-	return dec;
+	return (dec);
 }
