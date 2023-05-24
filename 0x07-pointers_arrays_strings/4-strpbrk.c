@@ -4,19 +4,20 @@
  * @s: string to be searched
  * @accept: contains the matching chars
  * Return: It returns a pointer to the character in s1 that
- * that matches char in accept or nu if there is no match
+ * that matches char in accept or null if there is no match
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
+	char *ptr = accept;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		accept = ptr;
+		while (*accept++)
 		{
-			if (s[i] == accept[j])
-				return (s + 1);
+			if (*s == *accept)
+				return (s);
 		}
 	}
-	return (0);
+	return (NULL);
 }
